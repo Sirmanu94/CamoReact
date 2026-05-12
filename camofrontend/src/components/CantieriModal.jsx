@@ -129,7 +129,7 @@ export default function CantiereModal({ isOpen, onClose, cantiereId, onSuccess }
                   {cantiereId && copertinaAttuale && (
                     <div className="mb-3">
                       <img src={`https://admin.camocostruzioni.it/${copertinaAttuale}`} alt="Copertina" className="h-20 rounded object-cover border border-white/20" />
-                      <p className="text-xs text-gray-500 mt-1">Seleziona un file qui sotto per sovrascriverla.</p>
+                      <p className="text-xs text-gray-500 mt-1">Seleziona un file qui sotto per sovrascriverla .</p>
                     </div>
                   )}
                   <input type="file" accept="image/*" onChange={(e) => setFotoCopertina(e.target.files[0])}
