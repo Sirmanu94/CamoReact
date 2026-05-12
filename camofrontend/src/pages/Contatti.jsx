@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
-const API_URL = "https://localhost:7273/api/contact/invia";
+const API_URL = "https://admin.camocostruzioni.it/api/contact/invia";
 
 export default function Contatti() {
   const [formData, setFormData] = useState({

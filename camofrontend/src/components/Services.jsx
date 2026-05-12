@@ -13,7 +13,7 @@ export default function Services() {
   ];
 const navigate = useNavigate();
   return (
-    <section 
+    <section id="services"
       className="py-24 px-6 md:px-12 relative overflow-hidden bg-cover bg-center"
       style={{ backgroundImage: `url(${sfondoServizi})` }}
     >

@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import logo from '../assets/Logo-navbar.png';
 
-const API_URL = "https://localhost:7273/api/cantieri"; // URL del backend
+const API_URL = "https://admin.camocostruzioni.it/api/cantieri"; // URL del backend
 
 export default function CreaCantiere() {
   const navigate = useNavigate();

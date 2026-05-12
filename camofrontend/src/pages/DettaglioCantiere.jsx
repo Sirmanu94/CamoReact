@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
-const API_URL = "https://localhost:7273/api/cantieri";
+const API_URL = "https://admin.camocostruzioni.it/api/cantieri";
 
 export default function DettaglioCantiere() {
   const { id } = useParams();
@@ -60,7 +60,7 @@ export default function DettaglioCantiere() {
       <section className="relative h-[60vh] md:h-[70vh] w-full bg-[#030508] overflow-hidden pt-24">
         {cantiere.pathFotoCopertina && (
           <img 
-            src={`https://localhost:7273${cantiere.pathFotoCopertina}`} 
+            src={`https://admin.camocostruzioni.it/${cantiere.pathFotoCopertina}`} 
             alt={cantiere.descrizioneBreve}
             className="absolute inset-0 w-full h-full object-cover opacity-60"
           />
@@ -110,7 +110,7 @@ export default function DettaglioCantiere() {
                   // Potresti in futuro aggiungere una lightbox (es. react-image-lightbox) sull'onClick
                 >
                   <img 
-                    src={`https://localhost:7273${foto}`} 
+                    src={`https://admin.camocostruzioni.it/${foto}`} 
                     alt={`Galleria ${index + 1}`}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />

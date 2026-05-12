@@ -41,15 +41,19 @@ export default function Hero() {
           >
             La tradizione ci lega alle solide tecniche costruttive del passato, l'innovazione ci spinge a esplorare nuovi materiali e tecnologie.
           </motion.p>
-          <motion.button 
-            initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.4 }}
-            className="mt-8 border border-[#e67e22] text-white rounded-full px-8 py-3 text-sm tracking-widest hover:bg-[#e67e22] transition-all flex items-center gap-3 mx-auto lg:mx-0"
-          >
-   <div className="w-4 h-6">
-  <img src={miniatura} className='w-full h-full' />
-</div>
-            scopri di più
-          </motion.button>
+          <motion.a
+  href="#services"
+  initial={{ opacity: 0, y: 30 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8, delay: 0.4 }}
+  className="mt-8 border border-[#e67e22] text-white rounded-full px-8 py-3 text-sm tracking-widest hover:bg-[#e67e22] transition-all flex items-center gap-3 mx-auto lg:mx-0 w-fit"
+>
+  <div className="w-4 h-6">
+    <img src={miniatura} className="w-full h-full" />
+  </div>
+
+  scopri di più
+</motion.a>
         </div>
 
         {/* LATO DESTRO: I 3 Edifici Animati */}
@@ -83,8 +87,8 @@ export default function Hero() {
             <p className="text-xs text-gray-400 uppercase mt-1">Anni di esperienza</p>
           </div>
           <div className="text-center">
-            <h3 className="text-4xl md:text-5xl font-light text-[#00b4d8]">+20</h3>
-            <p className="text-xs text-gray-400 uppercase mt-1">Anni di esperienza</p>
+            <h3 className="text-4xl md:text-5xl font-light text-[#00b4d8]">+50</h3>
+            <p className="text-xs text-gray-400 uppercase mt-1">Progetti portati a termine</p>
           </div>
         </div>
         <div className="mt-6 md:mt-0 md:pl-10 text-center md:text-left flex-1">

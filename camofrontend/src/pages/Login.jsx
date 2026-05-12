@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Link, useNavigate } from 'react-router-dom';
 import logo from '../assets/Logo-navbar.png';
 
-const API_LOGIN = "https://localhost:7273/api/auth/login";
+const API_LOGIN = "https://admin.camocostruzioni.it/api/auth/login";
 
 export default function Login() {
   const [credentials, setCredentials] = useState({ email: '', password: '' });

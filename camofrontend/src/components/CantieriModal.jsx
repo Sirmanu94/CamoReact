@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-const API_URL = "https://localhost:7273/api/cantieri";
+const API_URL = "https://admin.camocostruzioni.it/api/cantieri";
 
 export default function CantiereModal({ isOpen, onClose, cantiereId, onSuccess }) {
   const token = localStorage.getItem('camo_token');
@@ -128,7 +128,7 @@ export default function CantiereModal({ isOpen, onClose, cantiereId, onSuccess }
                   <label className="block text-gray-300 mb-2 text-sm font-medium">Foto di Copertina</label>
                   {cantiereId && copertinaAttuale && (
                     <div className="mb-3">
-                      <img src={`https://localhost:7273${copertinaAttuale}`} alt="Copertina" className="h-20 rounded object-cover border border-white/20" />
+                      <img src={`https://admin.camocostruzioni.it/${copertinaAttuale}`} alt="Copertina" className="h-20 rounded object-cover border border-white/20" />
                       <p className="text-xs text-gray-500 mt-1">Seleziona un file qui sotto per sovrascriverla.</p>
                     </div>
                   )}

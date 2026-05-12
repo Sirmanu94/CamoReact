@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
-const API_CANTIERI = "https://localhost:7273/api/cantieri";
+const API_CANTIERI = "https://admin.camocostruzioni.it/api/cantieri";
 
 export default function Cantieri() {
   const [cantieri, setCantieri] = useState([]);
@@ -73,7 +73,7 @@ export default function Cantieri() {
                 <Link to={`/cantieri/${cantiere.idCantiere}`} className="h-64 relative overflow-hidden block">
                   {cantiere.pathFotoCopertina ? (
                     <img 
-                      src={`https://localhost:7273${cantiere.pathFotoCopertina}`} 
+                      src={`https://admin.camocostruzioni.it/${cantiere.pathFotoCopertina}`} 
                       alt={cantiere.descrizioneBreve} 
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" 
                     />

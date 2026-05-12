@@ -4,7 +4,7 @@ import { useNavigate, Link } from 'react-router-dom';
 import logo from '../assets/Logo-navbar.png';
 import CantiereModal from '../components/CantieriModal'; // <-- Importa la Modale
 
-const API_CANTIERI = "https://localhost:7273/api/cantieri";
+const API_CANTIERI = "https://admin.camocostruzioni.it/api/cantieri";
 
 export default function GestioneCantieri() {
   const [cantieri, setCantieri] = useState([]);
@@ -126,7 +126,7 @@ export default function GestioneCantieri() {
                 
                 <div className="h-48 bg-gray-800 relative overflow-hidden">
                   {cantiere.pathFotoCopertina ? (
-                    <img src={`https://localhost:7273${cantiere.pathFotoCopertina}`} alt="Copertina" className="w-full h-full object-cover" />
+                    <img src={`https://admin.camocostruzioni.it/${cantiere.pathFotoCopertina}`} alt="Copertina" className="w-full h-full object-cover" />
                   ) : (
                     <div className="w-full h-full flex items-center justify-center text-gray-600"><i className="fa-solid fa-image text-3xl"></i></div>
                   )}
